@@ -1,0 +1,8 @@
+<button *ngIf="isHidden" (click)="reveal()">Reveal Content</button>
+<button *ngIf="!isHidden" (click)="hide()">Hide Content</button>
+
+<p *ngIf="isHidden">There is hidden content below:</p>
+
+<p *ngIf="!isHidden">Hidden Content is revealed!</p>
+
+<p *ngIf="!isHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sint ea? In doloribus at officiis dicta illum id quibusdam nulla.</p>
