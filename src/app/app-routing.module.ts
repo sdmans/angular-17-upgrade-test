@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ForLoopComponent } from './components/for-loop/for-loop.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'ng-if',
     component: NgIfComponent
+  },
+  {
+    path: 'ng-switch',
+    component: NgSwitchComponent
   }
 ];
 

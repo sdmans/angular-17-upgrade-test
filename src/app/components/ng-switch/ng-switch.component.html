@@ -1,0 +1,14 @@
+
+<select [(ngModel)]="selected">
+  <option *ngFor="let fruit of fruits" [value]="fruit">{{ fruit | titlecase }}</option>
+  <!-- <option value="apple">Apple</option>
+  <option value="orange">Orange</option>
+  <option value="banana">banana</option> -->
+</select>
+
+<div [ngSwitch]="selected">
+  <p *ngSwitchCase="'apple'">You selected an Apple.</p>
+  <p *ngSwitchCase="'orange'">You selected an Orange.</p>
+  <p *ngSwitchCase="'banana'">You selected a Banana.</p>
+  <p *ngSwitchDefault>Unknown Fruit.</p>
+</div>
